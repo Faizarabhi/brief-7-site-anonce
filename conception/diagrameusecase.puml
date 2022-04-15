@@ -1,0 +1,18 @@
+@startuml
+left to right direction
+actor "Utilisateur" as ut
+rectangle Stocks {
+  usecase "autehentifier" as UC1
+  usecase "Ajouter une annonce" as UC2
+  usecase "Modifier une annonce" as UC3
+  usecase "Supprimer une annonce" as UC4
+
+  
+}
+
+ut --> UC2
+
+(UC2) .> (UC1) :include
+(UC3) .> (UC2): extends
+(UC4) .> (UC2): extends
+@enduml
