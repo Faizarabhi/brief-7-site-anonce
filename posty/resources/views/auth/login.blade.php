@@ -1,7 +1,7 @@
 @extends('layouts.app')
 @section('content')
-<div class="flex justify-center">
-    <div class="w-8/12 bg-white p-6 rounded-lg">
+<div class="flex justify-center mt-40">
+    <div class="w-2/6 bg-white p-6  rounded-lg">
         @if (session('status'))
         <div class="bg-red-500 p-4 rounded-lg mb-6 text-white text-center">
         {{session('status')}}</div>
@@ -27,8 +27,8 @@
                 </div>
                 @enderror
             </div>
-            <div class="mb-4">
-                <div class="flex items-center">
+            <div class="mb-4  ">
+                <div class="flex items-center ">
                     <input type="checkbox" name="remember" id="remember" class="mr-2">
                     <label for="remember">Remeber me</label>
                 </div>
@@ -39,5 +39,8 @@
             </div>
         </form>
     </div>
-</div>
+    <div class="">
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+<lottie-player src="https://assets1.lottiefiles.com/packages/lf20_qkw0iiyo.json"  background="transparent"  speed="1"  style="width: 300px; height: 300px;"  loop  autoplay></lottie-player>
+</div></div>
 @endsection

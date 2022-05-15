@@ -10,6 +10,9 @@ class Post extends Model
     use HasFactory;
     protected $fillable =[
         'body',
+        'title',
+        'type',
+        'image',
 
     ];
  public function likedBy(User $user){
